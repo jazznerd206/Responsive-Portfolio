@@ -238,6 +238,47 @@ button {
 }
 
 @media screen and  (max-width: 768px) {
+    body {
+        width: 768px;
+    }
+    .title {
+        max-height: 80px;
+        overflow: auto;
+        left: 5%;
+    }
+    .topnav {
+        right: 5%;
+    }
+    .toplevel {
+        position: static;
+        right: 5%;  
+        left: 5%;
+    }
+    .mainlevel {
+        position: absolute;
+        max-width: 600px;
+        left: 5%;
+    }
+    .mediaheader{
+        width: 100vw;
+    }
+    textarea, input {
+        max-width: 100%;
+    }
+    .portfoliodiv {
+        max-width: 500px;
+    }
+    img {
+        max-width: 100%;
+    }
+
+    .image {
+        max-width: 46%;
+    }
+    .projecttitle {
+        max-width: 92%;
+    }
+
     
 }
 
