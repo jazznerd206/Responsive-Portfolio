@@ -101,7 +101,7 @@ ul, .topnav, .divider {
 .topnav {
     float: right; /*floats to right*/
     margin-top: 25px; /*sets margin from top of viewport*/
-    margin-right: 150px; /*sets margin from right of viewport (go back and do real math on this one*/
+    margin-right: 5%; /*sets margin from right of viewport (go back and do real math on this one*/
 }
 
 /*large scale page container, not content*/
@@ -250,13 +250,14 @@ button {
         right: 5%;
     }
     .toplevel {
+        max-width: 100%;
         position: static;
         right: 5%;  
         left: 5%;
     }
     .mainlevel {
         position: absolute;
-        max-width: 600px;
+        max-width: 625px;
         left: 5%;
     }
     .mediaheader{
