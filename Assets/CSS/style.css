@@ -66,7 +66,7 @@ p {
     width: 250px; /*set width for title*/
     background-color: #4aaaa5; /*set background color for title*/
     text-align: center; /*centers text in title div*/
-    left: 15%; /*sets div position away from edge (go back and do real math)*/
+    left: 12%; /*sets div position away from edge (go back and do real math)*/
     position: absolute; /*uses header as ancestor*/
 }
 
@@ -213,7 +213,7 @@ button {
     .mainlevel {
         position: absolute;
         max-width: 560px;
-        left: 5%;
+        left: 9%;
     }
     .mediaheader{
         width: 100vw;
