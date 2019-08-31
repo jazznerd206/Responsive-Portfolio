@@ -14,7 +14,7 @@ body {
 /*set style for header*/
 header {
     position: fixed; /*positioned ancestor, clings to top of viewport*/
-    width: 100%; /*spans width of page*/
+    width: 100vw; /*spans width of page*/
     height: 80px; /*sets visual height of header*/
     top: 0; /*sets distance from top of viewport*/
     left: 0; /*sets distance from left side of viewport*/
@@ -66,7 +66,7 @@ p {
     width: 250px; /*set width for title*/
     background-color: #4aaaa5; /*set background color for title*/
     text-align: center; /*centers text in title div*/
-    left: 250px; /*sets div position away from edge (go back and do real math)*/
+    left: 15%; /*sets div position away from edge (go back and do real math)*/
     position: absolute; /*uses header as ancestor*/
 }
 
@@ -81,7 +81,7 @@ p {
 nav {
     float: right; /*sets nav to the right side of the screen*/
     position: relative; /*sets position*/
-    right: 200px; /*moves in 200px from right side of viewport*/
+    right: 15%px; /*moves in 200px from right side of viewport*/
 }
 
 /*multiple class stylings*/
@@ -101,7 +101,7 @@ ul, .topnav, .divider {
 .topnav {
     float: right; /*floats to right*/
     margin-top: 25px; /*sets margin from top of viewport*/
-    margin right: 150px; /*sets margin from right of viewport (go back and do real math on this one*/
+    margin-right: 150px; /*sets margin from right of viewport (go back and do real math on this one*/
 }
 
 /*large scale page container, not content*/
@@ -188,4 +188,44 @@ button {
     background-color: #4aaaa5; /*sets background color for title*/
     text-align: center; /*aligns title text to center*/
     opacity: .5; /*creates opacity of title so entire picture can be viewed. I love my dog.*/
+}
+
+/* MEDIA QUERIES */
+
+@media screen and  (max-width: 980px) {
+    body {
+        width: 980px;
+    }
+    .title {
+        max-height: 80px;
+        overflow: auto;
+        left: 5%;
+    }
+    .topnav {
+        right: 5%;
+    }
+    .toplevel {
+        position: static;
+        right: 5%;
+        left: 5%;
+    }
+    .mainlevel {
+        position: absolute;
+        max-width: 560px;
+        left: 5%;
+    }
+    .mediaheader{
+        width: 100vw;
+    }
+    textarea, input {
+        max-width: 100%;
+    }
+}
+
+@media screen and  (max-width: 768px) {
+    
+}
+
+@media screen and  (max-width: 640px) {
+    
 }
