@@ -228,8 +228,11 @@ button {
         max-width: 100%;
     }
 
-    .image, .projecttitle {
-        width: 200px;
+    .image {
+        max-width: 46%;
+    }
+    .projecttitle {
+        max-width: 92%;
     }
 
 }
