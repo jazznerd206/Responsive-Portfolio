@@ -1,0 +1,191 @@
+/*the following styles are applied to all pages, body/header/footer remain consistent*/
+
+/*sets style for body of page*/
+body {
+    margin: 0; /*allows body to fit to viewport*/
+    padding: 0; /*allows body to fit to viewport*/
+    height: 100%; /*allows body to fit to viewport*/
+    background-color: #4aaaa5; /*sets background color for body*/
+    background-image: url("../Images/floortile.png"); /*background image for body*/
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; /*sets font family for page*/
+    color: #777777; /*sets font color for page*/
+}
+
+/*set style for header*/
+header {
+    position: fixed; /*positioned ancestor, clings to top of viewport*/
+    width: 100%; /*spans width of page*/
+    height: 80px; /*sets visual height of header*/
+    top: 0; /*sets distance from top of viewport*/
+    left: 0; /*sets distance from left side of viewport*/
+    border-color: #cccccc; /*sets border color of header*/
+    background-color: #ffffff; /*sets background color of header*/
+}
+
+/*set style for footer*/
+footer {
+    position: fixed; /*locks footer to bottom of page (revisit)*/
+    width: 100%; /*spans width of page*/
+    height: 50px; /*sets visual height of footer*/
+    bottom: 0; /*sets distance from bottom of viewport*/
+    left: 0; /*locks footer to left side of viewport*/
+    background-color: #666666; /*sets background color of footer*/
+    border-top: 8px solid #4aaaa5; /*top border of footer*/
+}
+
+/*heading style*/
+h1 {
+    color: #ffffff; /*sets color for h1*/
+    font-family: Georgia, Times, 'Times New Roman', serif; /*sets font for headings*/
+}
+
+/*heading style 2*/
+h2 {
+    color: #4aaaa5; /*sets color for h2*/
+    font-family: Georgia, Times, 'Times New Roman', serif; /*sets font for headings*/
+}
+
+/*heading style 4*/
+h4 {
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+/*QUOTE: hide this until you can figure out how to do what you want with it*/
+.quote {
+    display: none; /*hides quotes until ready to be deployed*/
+}
+
+p {
+    line-height: 2; /*spaces text in paragraphs*/
+}
+
+/*this locks the title div into the top left corner of the header div*/
+.title {
+    float: left; /*sets float for title*/
+    width: 250px; /*set width for title*/
+    background-color: #4aaaa5; /*set background color for title*/
+    text-align: center; /*centers text in title div*/
+    left: 250px; /*sets div position away from edge (go back and do real math)*/
+    position: absolute; /*uses header as ancestor*/
+}
+
+/*clearfix hack, used in multiple places*/
+#clearfix::after {
+    content: " "; /*clearfix content*/
+    display: block; /*sets display type for included content*/
+    clear: both; /*sets how much to clearfix*/
+}
+
+/*sets style for navigation links*/
+nav {
+    float: right; /*sets nav to the right side of the screen*/
+    position: relative; /*sets position*/
+    right: 200px; /*moves in 200px from right side of viewport*/
+}
+
+/*multiple class stylings*/
+ul, .topnav, .divider {
+    list-style-type: none; /*specifies type of marker for the <li>, in this case, none*/
+    margin: 0; /*zeroes out margin so style can be applied individually*/
+    padding: 0; /*zeroes out padding so style can be applied individually*/
+    display: inline; /*allows list to be displayed horoizontally instead of vertically*/
+}
+
+/*not sure, but when i delete this it screws everything up*/
+.toplinks {
+    display: inline-block;
+}
+
+/*styles for nav bar*/
+.topnav {
+    float: right; /*floats to right*/
+    margin-top: 25px; /*sets margin from top of viewport*/
+    margin right: 150px; /*sets margin from right of viewport (go back and do real math on this one*/
+}
+
+/*large scale page container, not content*/
+.container {
+    position: absolute; /*base setting for positioning other divs*/
+    height: 100%; /*sets height to entire viewport*/
+    min-height: 100vh; /*sets to allow scrolling when necessary*/
+    width: 100%; /*sets width to entire viewport*/
+    margin: 0px; /*sets margin to zero*/
+    padding: 20px; /*sets padding to 20px on all sides*/
+}
+
+/*styles for main content of home page*/
+.mainlevel {
+    width: 920px; /*sets width of main content*/
+    margin: 100px auto 100px; /*sets margin around main content*/
+    padding: 20px; /*sets padding for main content*/
+    background-color: #ffffff; /*background color*/
+    border-color: #dddddd; /*border color*/
+}
+
+/*styles for jpg file in mainlevel*/
+.biopic {
+    height: 200px; /*height of jpg, had to resize*/
+    width: 200px; /*width of jpg, had to resize*/
+    float: left; /*floats on left side of div*/
+    margin: 20px, 20px, 20px, 20px; /*sets margin of jpg*/
+    padding: 20px; /*sets padding of jpg*/
+}
+
+/*styles for <p> in mainlevel*/
+.bio {
+    margin: 25 px, 25px, 25px, 25px; /*sets margins for <p> in mainlevel*/
+}
+
+/*styles for contact form*/
+form {
+    margin: 20px, 20px, 20px, 20px; /*sets margin for form div*/
+}
+
+/*styles for name/email boxes of contact form*/
+input{
+    margin: 10px; /*sets margins of name/email entry*/
+    padding: 0; /*sets padding of name/email entry*/
+    width: 900px; /*sets with of name/email entry*/
+    font-family: Georgia, 'Times New Roman', Times, serif; /*sets font of name/email entry*/
+}
+
+/*styles for message box on contact form*/
+textarea {
+    margin: 10px; /*sets margins around message box*/
+    width: 900px; /*sets width of message box*/
+    font-family: Georgia, 'Times New Roman', Times, serif; /*sets font type message box*/
+}
+
+/*style for submit button on contact form*/
+button {
+    margin: 10px; /*sets margins of button*/
+    background-color: #4aaaa5; /*sets color of background on button*/
+    color: #ffffff; /*sets font color of button*/
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; /*sets font type of button*/
+    padding: 10px, 10px; /*adds padding around button*/
+}
+
+/*styles for portfolio page*/
+.portfoliodiv {
+    width: 700px; /*sets width of large scale jpg container, non visual*/
+    margin: 10px, 10px, 10px, 10px; /*sets margins of large scale jpg container, non visual*/
+}
+
+/*styles for jpg files, clearfix used*/
+.image {
+    position: relative; /*nearest positioned ancestor*/
+    float: left; /*sets float to left*/
+    padding: 10px; /*sets padding for images*/
+    margin: 25px, 25px, 25px, 25px; /*sets margins for images*/
+}
+
+/*styles for "project" title*/
+.projecttitle {
+    position: absolute; /*sets position for project titles, uses jpg for nearest positioned ancestor*/
+    bottom: 20px; /*spacer on bottom of jpg*/
+    width: 320px; /*sets width of title to match jpg*/
+    background-color: #4aaaa5; /*sets background color for title*/
+    text-align: center; /*aligns title text to center*/
+    opacity: .5; /*creates opacity of title so entire picture can be viewed. I love my dog.*/
+}
