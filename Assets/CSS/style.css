@@ -175,6 +175,7 @@ button {
 
 /*styles for jpg files, clearfix used*/
 .image {
+    object-fit: fill;
     max-width: 100%;
     position: relative; /*nearest positioned ancestor*/
     float: left; /*sets float to left*/
